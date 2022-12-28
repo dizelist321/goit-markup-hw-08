@@ -1,0 +1,38 @@
+.customers__title {
+    color: var(--primary-header-color);
+    margin-bottom: 50px;
+}
+.customers__list {
+    justify-content: center;
+    @extend %flex-align;
+}
+.customers__items {
+    width: 170px;
+    height: 92px;
+    &:focus,
+    &:hover {
+        fill: #2196F3;
+        border-color: #2196F3;
+    }
+}
+.customers__items:not(:last-child) {
+    margin-right: 30px;
+}
+.customers__link {
+    width: 100%;
+    height: 100%;
+    fill: #AFB1B8;
+    background-color: #FFFFFF;
+    justify-content: center;
+    @extend %flex-align;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+    &:hover {
+        fill: #2196F3;
+        border-color: #2196F3;
+    }
+}
+

@@ -1,0 +1,106 @@
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filters li + li {
+    margin-left: 8px;
+}
+
+.btn-1 {
+    width: 73px;
+    height: 38px;
+}
+.btn-2 {
+    width: 128px;
+    height: 38px;
+}
+.btn-3 {
+    width: 145px;
+    height: 38px;
+}
+.btn-4 {
+    width: 103px;
+    height: 38px;
+}
+.btn-5 {
+    width: 130px;
+    height: 38px;
+}
+.filter-btn {
+    @include font(500, 16px, 1.6, 0.03em);
+    font-family: inherit;
+    text-align: center;
+    color: #212121;
+    background-color: #F5F4FA;
+    background: #F5F4FA;
+    border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: #FFFFFF;
+    background-color: #2196F3;
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+    justify-content: space-between;
+}
+.portfolio__link {
+    width: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-bottom: 30px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    width: 370px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        border: 1px solid #EEEEEE;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.portfolio-card__thumb {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-card__text {
+    @include font(400, 18px, 1.55, 0.03em);
+    color: #FFFFFF;
+    position: absolute;
+    background: rgba(33, 150, 243, 0.9);
+    top: 0;
+    padding: 63px 24px 91px;
+    height: 100%;
+    transform: translateY(100%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio__link:hover
+.portfolio-card__text {
+    transform: translateY(0);
+}
+
+.portfolio__items {
+   padding: 20px 24px;
+}
+.portfolio__title {
+    @include font(700, 18px, 2, 0.06em);
+    color: var(--primary-header-color);
+}
+.portfolio__text {
+    @include font(400, 16px, 1.88, 0.03em);
+    color: var(--primary-text-color);
+    margin-top: 4px;
+}

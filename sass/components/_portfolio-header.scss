@@ -1,0 +1,16 @@
+.portfolio-header {
+    border-bottom: 1px solid #ECECEC;
+}
+.portfolio-header__list {
+    display: flex;
+}
+.portfolio-header__list li + li {
+    margin-left: 50px;
+}
+ 
+.portfolio-logo {
+    color: var(--primary-header-color);
+    margin-right: 97px;
+}
+
+

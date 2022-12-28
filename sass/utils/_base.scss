@@ -1,0 +1,41 @@
+button {
+    cursor: pointer;
+    border: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    font-family: Roboto, Raleway, sans-serif;
+}
+.container {
+    width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.logo {
+    font-family: Raleway;
+    font-style: normal;
+    @include font(700, 26px, 1.2, 0.03em);
+}
+.title {
+    @include font(700, 36px, 1.17, 0.03em);
+    text-align: center;
+}
+.ending {
+    font-style: normal;
+    @include font(400, 14px, 1.7, 0.03em);
+}
