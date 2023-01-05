@@ -1,8 +1,10 @@
+
 @import "./utils/mixin";
 @import "./utils/placeholder";
 @import "./utils/variables";
 @import "./utils/reset";
 @import "./utils/base";
+@import "./components/container";
 @import "./components/_header";
 @import "./components/_main";
 @import "./components/_about";
@@ -13,6 +15,7 @@
 @import "./components/_portfolio-header";
 @import "./components/_portfolio-main";
 @import "./components/_modal";
+@import "./components/mobile";
 
 
 

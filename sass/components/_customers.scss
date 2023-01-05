@@ -5,19 +5,46 @@
 .customers__list {
     justify-content: center;
     @extend %flex-align;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    margin-left: 30px / -1;
+    margin-bottom: 30px / -1;
+
+
+
 }
 .customers__items {
-    width: 170px;
+    // width: 170px;
     height: 92px;
     &:focus,
     &:hover {
         fill: #2196F3;
         border-color: #2196F3;
     }
+
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-bottom: 30px;
+
+    @include tablet {
+        flex-basis: calc((100% - 90px) / 3);
+      }
+    
+      @include desktop {
+        flex-basis: calc((100% - 180px) / 6);
+
+        &:last-child {
+            margin-right: 0px;
+          }
+
+        }
 }
-.customers__items:not(:last-child) {
-    margin-right: 30px;
-}
+// .customers__items:not(:last-child) {
+//     margin-right: 30px;
+// }
+
 .customers__link {
     width: 100%;
     height: 100%;

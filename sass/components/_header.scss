@@ -4,19 +4,48 @@
 
 header .container {
     @extend %flex-align;
-    height: 80px;
+    height: 60px;
+
+    @include tablet {
+        height: 80px;
+      }
+
+      @include desktop {
+        height: 80px;
+      }  
 }
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+}
+
 .web {
     color: var(--primary-link-color);
 }
-.header-logo {
+.header__logo {
     color: var(--primary-header-color);
-    margin-right: 97px;
+    margin-right: 87px;
+
+    @media screen and (min-width: 1200px) {
+        .header__logo {
+          margin-right: 92px;
+        }
 }
+}
+
+@media screen and (max-width: 767px) {
+    .navigation {
+      display: none;
+    }
+  }
 
 .navigation-list {
     display: flex;
 }
+
 .navigation-list li + li {
     margin-left: 50px;
 }
@@ -44,29 +73,63 @@ header .container {
     top: 45px;
     background: #2196F3;
     border-radius: 2px;
+    }
 }
-}
+
 
 .navigation-contacts__list {
-    margin-left: auto; 
-    @extend %flex-align;
-    gap: 40px;
-}
-.navigation-contacts__link {
-    color: var(--primary-text-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    @extend %flex-align;
-
-    &:hover,
-    &:focus {
-        color: var(--primary-link-color);
+    // margin-left: auto; 
+    // @extend %flex-align;
+    // gap: 40px;
+    
+    @media screen and (max-width: 767px) {
+        display: none;
+      }
+    
+      @include desktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;;
+      }
     }
+
+.navigation-contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+
+    @include desktop {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  }
+
+
+.navigation-contacts__link {
+    display: flex;
+    align-items: center;
+    color: #757575;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: gettransition(color);
+    text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: #2196F3;
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
 }
 
 .navigation-contacts__icon {
     fill: currentColor;
     margin-right: 10px;
 }
-
 
