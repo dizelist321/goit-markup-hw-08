@@ -4,7 +4,7 @@
 @import "./utils/variables";
 @import "./utils/reset";
 @import "./utils/base";
-@import "./components/container";
+@import "./components/_container";
 @import "./components/_header";
 @import "./components/_main";
 @import "./components/_about";
@@ -15,7 +15,8 @@
 @import "./components/_portfolio-header";
 @import "./components/_portfolio-main";
 @import "./components/_modal";
-@import "./components/mobile";
+@import "./components/_mobile";
+@import "./components/_section";
 
 
 

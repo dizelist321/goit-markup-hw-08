@@ -166,6 +166,13 @@
     margin-bottom: 10px;
     text-align: center;
 
+    @include tablet {
+      text-align: left;
+    }
+
+    @include desktop {
+      text-align: left;
+    }
     
 }
 .main__text {

@@ -1,0 +1,30 @@
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  
+    &__title {
+      margin-bottom: 50px;
+      color: #212121;
+      @include font(700, 36px, 1.17, null);
+      text-align: center;
+    }
+  
+    &--team-background {
+      background-color: #212121;
+    }
+  
+    @include desktop {
+      padding-top: 94px;
+      padding-bottom: 94px;
+  
+      &--nopadding {
+        padding-top: 0px;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1199px) {
+    .section--none {
+      display: none;
+    }
+  }

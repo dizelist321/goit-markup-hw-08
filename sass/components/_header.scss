@@ -26,7 +26,7 @@ header .container {
     color: var(--primary-link-color);
 }
 .header__logo {
-    color: var(--primary-header-color);
+    color: #212121;
     margin-right: 87px;
 
     @media screen and (min-width: 1200px) {
@@ -108,6 +108,7 @@ header .container {
     align-items: center;
     color: #757575;
     font-weight: 500;
+    font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition: gettransition(color);
@@ -124,6 +125,10 @@ header .container {
     justify-content: center;
     padding-top: 32px;
     padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
   }
 
 }
