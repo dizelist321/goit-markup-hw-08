@@ -807,15 +807,19 @@ header .container {
 }
 
 .subscribe-form__button {
-  display: flex;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 1.9;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  transition: gettransition(background-color);
-}
-.subscribe-form__button:hover, .subscribe-form__button:focus {
-  background-color: #188ce8;
 }
 
 .subscribe-form__icon {
