@@ -46,6 +46,17 @@ header .container {
     display: flex;
 }
 
+.navigation {
+
+  @include tablet {
+    margin-right: 114px;
+  }
+
+  @include desktop {
+    margin-right: 339px;
+  }  
+}
+
 .navigation-list li + li {
     margin-left: 50px;
 }

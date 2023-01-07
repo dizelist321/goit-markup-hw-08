@@ -1,5 +1,10 @@
 
 .subscribe-form {
+
+  @include tablet {
+    display: inline-block;
+  }
+
     @include desktop {
         display: flex;
         align-items: center;
